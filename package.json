@@ -19,7 +19,8 @@
       "comma-style": "off",
       "key-spacing": "off",
       "wrap-iife": ["error", "any"],
-      "func-names": ["warn", "as-needed"]
+      "func-names": ["warn", "as-needed"],
+      "eqeqeq": "off"
     },
     "overrides": [{"files": "test.js", "rules": {
       "no-unused-vars": "off",
