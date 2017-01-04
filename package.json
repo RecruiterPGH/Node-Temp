@@ -5,14 +5,20 @@
   "repository": ".",
   "license": "BSD-3-Clause",
   "scripts": {
-      "test": "mocha --compilers js:babel-register --ui exports test.js",
-      "watch": "npm test -- --watch",
-      "start": "node game.js"
+    "test": "mocha --compilers js:babel-register --ui exports test.js",
+    "watch": "npm test -- --watch",
+    "start": "babel-node game",
+    "integration-test": "npm start <<< $'\\x04'",
+    "integration-watch": "entr <<< game.js npm run integration-test"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.1.4",
     "babel-register": "^6.18.0",
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.4",
+    "bluebird": "^3.4.7"
   }
 }
