@@ -8,7 +8,7 @@
     "test": "mocha --compilers js:babel-register --ui exports test.js",
     "watch": "npm test -- --watch",
     "start": "babel-node game",
-    "integration-test": "npm start <<< $'\\x04'",
+    "integration-test": "npm start <<< $'2\\n\\x04'",
     "integration-watch": "entr <<< game.js npm run integration-test"
   },
   "devDependencies": {
