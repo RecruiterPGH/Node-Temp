@@ -12,6 +12,7 @@
     "integration-watch": "entr <<< game.js npm run integration-test"
   },
   "devDependencies": {
+    "babel-plugin-transform-function-bind": "^6.8.0",
     "babel-register": "^6.18.0",
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
