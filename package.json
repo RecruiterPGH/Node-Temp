@@ -1,8 +1,8 @@
 {
-  "name": "game",
+  "name": "node-template",
   "version": "0.0.0",
-  "description": "a game",
-  "repository": ".",
+  "description": "template for a node application",
+  "repository": "X1011/node-template",
   "license": "BSD-3-Clause",
   "scripts": {
     "test": "mocha --compilers js:babel-register --ui exports test.js",
@@ -33,7 +33,6 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "babel-plugin-transform-function-bind": "^6.8.0",
     "babel-register": "^6.18.0",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
@@ -41,6 +40,7 @@
   },
   "dependencies": {
     "babel-cli": "^6.18.0",
+    "babel-plugin-transform-function-bind": "^6.8.0",
     "babel-preset-env": "^1.1.4"
   }
 }
